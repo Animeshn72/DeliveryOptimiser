@@ -33,9 +33,14 @@ Delivery route optimiser for a food delivery scenario
 
 Clone the repository and navigate to the project folder.
 
+```bash
+git clone https://github.com/Animeshn72/DeliveryOptimiser.git
+```
+
 To automatically set up the environment, install Python (if necessary), and run the application, execute the provided setup script:
 
 ```bash
+cd DeliveryOptimiser
 chmod +x setup_and_run.sh
 ./setup_and_run.sh
 ```
