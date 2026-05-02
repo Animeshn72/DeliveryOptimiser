@@ -1,10 +1,16 @@
 import ast
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.routeFinder import RouteFinder
 
 def main():
     # 1. Load Test Cases from file
     try:
-        with open('test_cases.txt', 'r') as f:
+        file_path = os.path.join(os.path.dirname(__file__), 'test_cases.txt')
+        with open(file_path, 'r') as f:
             test_cases = ast.literal_eval(f.read())
     except FileNotFoundError:
         print("Error: 'test_cases.txt' not found. Please ensure the file exists.")
